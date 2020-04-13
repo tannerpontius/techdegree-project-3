@@ -1,6 +1,6 @@
 /********* BASE STYLES *********/
 
-/* * {
+* {
     box-sizing: border-box;
 }
 
@@ -8,6 +8,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -25,8 +27,15 @@ header h1 {
     padding: 1em 0;
     color: white;
     text-transform: uppercase;
-} */
+}
 
 
 
 /********* LAYOUT STYLES *********/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
