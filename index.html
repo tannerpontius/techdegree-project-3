@@ -64,6 +64,7 @@
                 <div class="field-holder">
                     <label for="state">State</label>
                     <select name="user_state" id="state">
+                        <option value="" disabled selected>Choose State</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -129,22 +130,23 @@
             <fieldset class="newsletter-fieldset">
                 <legend>Newsletter</legend>
                 
-                <label>Select the newsletters you would like to receive</label><br>
-                <input type="checkbox" id="html" value="html_news" name="user_newsletter"><label for="html">HTML News</label><br>
-                <input type="checkbox" id="css" value="css_news" name="user_newsletter"><label for="css">CSS News</label> <br>
-                <input type="checkbox" id="javascript" value="javascript_news" name="user_newsletter"><label for="javascript">Javascript News</label><br>
-
+                <div class="newsletter-field-holder">
+                    <label class="newsletter-label">Select the newsletters you would like to receive</label>
+                    <input type="checkbox" id="html" value="html_news" name="user_newsletter"><label for="html">HTML News</label><br>
+                    <input type="checkbox" id="css" value="css_news" name="user_newsletter"><label for="css">CSS News</label> <br>
+                    <input type="checkbox" id="javascript" value="javascript_news" name="user_newsletter"><label for="javascript">Javascript News</label><br>
+                </div>
               
-
-                <label>Newsletter format</label><br >
-                <input type="radio" id="htmlFormat" value="html_format" name="newsletter_format"><label for="htmlFormat">HTML</label><br>
-                <input type="radio" id="plainText" value="plain_text" name="newsletter_format"><label for="plainText">Plain text</label><br>
-
+                <div class="newsletter-field-holder">
+                    <label class="newsletter-label">Newsletter format</label>
+                    <input class="newsletter-select" type="radio" id="htmlFormat" value="html_format" name="newsletter_format"><label for="htmlFormat">HTML</label><br>
+                    <input type="radio" id="plainText" value="plain_text" name="newsletter_format"><label for="plainText">Plain text</label><br>
+                </div>
               
-
-                <label for="otherTopics">Other topics you'd like to hear about</label>
-                <textarea name="user_comment" id="otherTopics" cols="30" rows="10"></textarea>
-
+                <div class="newsletter-field-holder">
+                    <label class="newsletter-label" for="otherTopics">Other topics you'd like to hear about</label>
+                    <textarea name="user_comment" id="otherTopics" cols="30" rows="10"></textarea>
+                </div>
                 
 
                 <button type="submit">Sign Up</button>
@@ -158,7 +160,7 @@
     </div>
 
     <footer>
-        <p class="copyright">Copyright The Code Review</p>
+        <p class="copyright"><i>Copyright The Code Review</i></p>
     </footer>
 
 
