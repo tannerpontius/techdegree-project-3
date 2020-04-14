@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 body {
@@ -108,7 +109,6 @@ label {
 }
 
 input,
-textarea,
 select {
     margin-bottom: 2em;
 }
@@ -128,7 +128,7 @@ select {
 
 input[type="checkbox"],
 input[type="radio"] {
-    margin-right: 2em;
+    margin-right: 1em;
 }
 
 
@@ -144,7 +144,7 @@ select {
     background: #e8eeef;
     border: 2px solid #e8eeef;
     border-radius: 5px;
-    color: rgb(165, 165, 165);
+    color: #8a97a0;
     font-size: 16px;
 }
 
@@ -177,7 +177,9 @@ button[type="submit"]:hover {
     opacity: 0.8;
 }
 
-
+#zip {
+    width: 40%;
+}
 
 
 
@@ -225,7 +227,7 @@ button[type="submit"]:hover {
         max-width: none;
     }
 
-    
+  
 
 
 
