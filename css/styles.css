@@ -88,6 +88,7 @@ footer {
 form {
     display: flex;
     flex-direction: column;
+    margin: 3em 0;
 }
 
 legend {
@@ -196,6 +197,10 @@ input::placeholder {
 
 @media (min-width: 768px) {
 
+    header {
+        margin-bottom: 3em;
+    }
+
     .field-holder {
         display: flex;
         flex-direction: row;
@@ -220,8 +225,6 @@ input::placeholder {
     p {
         max-width: none;
     }
-
-  
 
 
 
