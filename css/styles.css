@@ -49,7 +49,6 @@ header h1 {
     width: 95%;
     margin: auto;
     max-width: 800px;
-    justify-content: center;
 }
 
 .newsletter {
@@ -109,8 +108,9 @@ label {
 }
 
 input,
-select {
-    margin-bottom: 2em;
+select,
+.newsletter-field-holder {
+    margin-bottom: 1.5em;
 }
 
 .newsletter-fieldset {
@@ -122,9 +122,6 @@ select {
     display: block;
 }
 
-.newsletter-field-holder {
-    margin-bottom: 2em;
-}
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -156,8 +153,11 @@ textarea:focus {
 }
 
 select {
-    height: 50px;
+    height: 70px;
+    text-indent: 13px;
   }
+
+
 
 textarea {
     width: 100%;
@@ -177,24 +177,18 @@ button[type="submit"]:hover {
     opacity: 0.8;
 }
 
-#zip {
-    width: 40%;
+.zip-container {
+    width: 70%;;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+input::placeholder {
+    opacity: 0.3;
+    text-align: right;
+    font-style: italic;
+}
 
 
 
@@ -205,16 +199,16 @@ button[type="submit"]:hover {
     .field-holder {
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
     }
+
 
     .newsletter-field-holder {
         justify-content: flex-start;
     }
 
     label {
-        align-self: flex-start;
+        padding-top: 1em;
     }
 
 
