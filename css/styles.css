@@ -8,23 +8,28 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Merriweather', serif;
+    color: rgb(165, 165, 165);
     display: flex;
     flex-direction: column;
 }
 
-h1 {
-    margin: 0;
-    padding: 0;
+
+h1, 
+h2, 
+h3, 
+h4,
+legend {
+    color: #333;
 }
 
 header {
     display: flex;
     justify-content: center;
-    background: #3596ce;
+    background: rgb(11, 0, 80);
 }
 
 header h1 {
-    padding: 1em 0;
+    padding: 0.5em 0;
     color: white;
     text-transform: uppercase;
 }
@@ -38,4 +43,126 @@ header h1 {
     flex-direction: column;
     width: 90%;
     margin: auto;
+    max-width: 800px;
+    justify-content: center;
+}
+
+.newsletter {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.accent-thick {
+    height: 5px;
+    width: 100%;
+    background: #333;
+}
+
+.accent-thin {
+    height: 2px;
+    width: 100%;
+    background: #333;
+    margin-top: .35em;
+}
+
+.accent-group {
+    margin-top: 3em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background: rgb(11, 0, 80);
+    color: white;
+}
+
+/********* FORM STYLES *********/
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+fieldset {
+    margin-bottom: 2.5em;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input,
+textarea,
+select {
+    margin-bottom: 1.5em;
+}
+
+.newsletter-fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.field-holder {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********* MEDIA QUERIES *********/
+
+@media (min-width: 768px) {
+
+    .field-holder {
+        display: flex;
+        flex-direction: row;
+    }
+
+    label {
+        margin-right: 3em;
+    }
+
+
+
+
+
+
 }
