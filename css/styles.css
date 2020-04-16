@@ -31,7 +31,7 @@ p {
 header {
     display: flex;
     justify-content: center;
-    background: rgb(11, 0, 80);
+    background: darkslategray;
 }
 
 header h1 {
@@ -78,7 +78,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 15px 0;
-    background: rgb(11, 0, 80);
+    background: darkslategray;
     color: white;
 }
 
