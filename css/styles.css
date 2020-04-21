@@ -5,6 +5,7 @@
     max-width: 100%;
 }
 
+
 body {
     margin: 0;
     padding: 0;
@@ -196,7 +197,7 @@ input::placeholder {
 /********* MEDIA QUERIES *********/
 
 @media (min-width: 768px) {
-
+    
     header {
         margin-bottom: 3em;
     }
